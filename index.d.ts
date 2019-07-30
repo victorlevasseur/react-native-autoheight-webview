@@ -4,7 +4,7 @@
 // TypeScript Version: 2.8
 import { Component } from "react";
 import { WebViewProps } from "react-native-webview";
-import {ViewStyle} from "react-native";
+import { StyleProp, ViewStyle } from "react-native";
 
 export interface StylesFile {
     href: string;
@@ -21,7 +21,7 @@ export interface AutoHeightWebViewProps extends WebViewProps {
     onSizeUpdated: (size: SizeUpdate)=>void;
     baseUrl: string;
     files: StylesFile[];
-    style: ViewStyle;
+    style: StyleProp<ViewStyle>;
     customScript: string;
     customStyle: string;
     zoomable: boolean;
